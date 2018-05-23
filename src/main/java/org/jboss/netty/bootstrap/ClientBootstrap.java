@@ -91,17 +91,9 @@ import java.net.SocketAddress;
  * @apiviz.landmark
  */
 public class ClientBootstrap extends Bootstrap {
-
-    /**
-     * Creates a new instance with no {@link ChannelFactory} set.
-     * {@link #setFactory(ChannelFactory)} must be called before any I/O
-     * operation is requested.
-     */
+	
     public ClientBootstrap() {}
-
-    /**
-     * Creates a new instance with the specified initial {@link ChannelFactory}.
-     */
+    
     public ClientBootstrap(ChannelFactory channelFactory) {
         super(channelFactory);
     }
